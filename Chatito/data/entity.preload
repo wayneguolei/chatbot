@@ -1,0 +1,253 @@
+%[greeting]
+    bonjour
+    bonsoir
+    salut
+    ça va
+    ca va
+    comment ça va
+    comment ca va
+    cmt ça va
+    cmt ca va
+    comment allez vous
+    comment allez-vous
+    cmt allez vous
+    cmt allez-vous
+    comment alez vous
+    comment alez-vous
+    cmt alez vous
+    cmt alez-vous
+    bjr
+    hello
+    hi
+    allo
+    allô
+
+%[goodbye]
+    au revoir
+    à plus tard
+    à bientôt
+    à très bientôt
+    a plus tard
+    a bientôt
+    a très bientôt
+    à plus tard
+    à bientot
+    à très bientot
+    a plus tard
+    a bientot
+    a très bientot
+    à tres bientôt
+    a plus tard
+    a bientôt
+    a très bientôt
+    à plus tard
+    à bientot
+    à tres bientot
+    a plus tard
+    a bientot
+    a tres bientot
+    bonne journée
+    bonne soirée
+    bonne jouree
+    bonne soiree
+    bye
+    goodbye
+
+%[thanks]
+    merci
+    je vous remercie
+    je te remercie
+    merci à toi
+    merci à vous
+    merci beaucoup
+    merci bcp
+    merci bien
+    merciiiiii
+    merciiii
+    super
+    superrrrr
+    superrrrrrr
+    cooooool
+    cool
+    coooool
+    cooooooool
+    thanks
+    thank you
+    thx
+
+%[confirm]
+    ok
+    yes
+    oui
+    ouiiiii
+    c'est ça
+    c'est ca
+    c'est bien ça
+    c'est bien ca
+
+%[deny]
+    non
+    non pas du tout
+    wrong
+    non merci
+    no
+    non c'est pas
+    non c'est pas ce que j'ai dit
+    non c'est pas ce que je dis
+    non c'est pas ce que je demnande
+    non c'est pas ce que je demnandait
+
+@[entity_dayoff]
+    RTT
+    ~[conge]
+    Vacances
+    enfant malade
+    RTT employeurs
+
+@[entity_weekday]
+    ~[monday]
+    ~[tuesday]
+    ~[wednesday]
+    ~[thursday]
+    ~[friday]
+    ~[saturday]
+    ~[sunday]
+
+@[entity_month]
+    ~[january]
+    ~[february]
+    ~[march]
+    ~[april]
+    ~[may]
+    ~[june]
+    ~[july]
+    ~[august]
+    ~[september]
+    ~[october]
+    ~[november]
+    ~[december]
+
+@[entity_next]
+    prochain
+    prochaine
+    prochaines
+
+@[entity_last]
+    dernier
+    dernière
+
+@[entity_tomorrow]
+    demain
+    lendemain
+    le landemain
+
+~[sum]
+    combien
+    solde
+
+~[entity_paylib]
+    bulletin de salaire
+    bulletin de paie
+
+~[conge]
+    congés
+    conges
+    congés payés
+    congé paye
+    cp
+
+~[require]
+    donnes-moi
+    donner moi
+    envoie-moi
+    envoyez-moi
+    où est
+
+~[want]
+    souhaite
+    souhaiter
+    veux
+    voudrais
+    voudrai
+
+~[day]
+    jour
+    jours
+    jr
+    jrs
+    j
+
+~[monday]
+    lundi
+    lun
+
+~[tuesday]
+    mardi
+    mar
+
+~[wednesday]
+    mercredi
+    mer
+
+~[thursday]
+    jeudi
+    jeu
+
+~[friday]
+    vendredi
+    ven
+
+~[saturday]
+    samdi
+    sam
+
+~[sunday]
+    dimanche
+    dim
+
+~[january]
+    janvier
+    jan
+
+~[february]
+    février
+    fevrier
+    fev
+    fév
+
+~[march]
+    mars
+
+~[april]
+    avril
+
+~[may]
+    mai
+
+~[june]
+    juin
+    jun
+
+~[july]
+    juillet
+    jui
+
+~[august]
+    août
+    aoû
+
+~[september]
+    setpembre
+    setp
+
+~[october]
+    octobre
+    oct
+
+~[november]
+    novembre
+    nov
+
+~[december]
+    décembre
+    déc

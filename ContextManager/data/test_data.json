@@ -1,0 +1,151 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [
+      {"value": "january", "synonyms": ["janvier", "jan"]},
+      {"value": "february", "synonyms": ["février", "fevrier", "fev", "fév"]},
+      {"value": "march", "synonyms": ["mars"]},
+      {"value": "april", "synonyms": ["avril"]},
+      {"value": "may", "synonyms": ["mai"]},
+      {"value": "june", "synonyms": ["juin", "jun"]},
+      {"value": "july", "synonyms": ["juillet", "jui"]},
+      {"value": "august", "synonyms": ["août", "aoû"]},
+      {"value": "september", "synonyms": ["setpembre", "setp"]},
+      {"value": "october", "synonyms": ["octobre", "oct"]},
+      {"value": "november", "synonyms": ["novembre", "nov"]},
+      {"value": "december", "synonyms": ["décembre", "déc"]},
+      {"value": "next", "synonyms": ["prochain", "prochaine", "prochaines"]},
+      {"value": "last", "synonyms": ["dernier", "dernière"]},
+      {
+        "value": "conge",
+        "synonyms": ["congés", "conges", "congés payés", "congé paye", "cp"]
+      },
+      {"value": "monday", "synonyms": ["lundi", "lun"]},
+      {"value": "tuesday", "synonyms": ["mardi", "mar"]},
+      {"value": "wednesday", "synonyms": ["mercredi", "mer"]},
+      {"value": "thursday", "synonyms": ["jeudi", "jeu"]},
+      {"value": "friday", "synonyms": ["vendredi", "ven"]},
+      {"value": "saturday", "synonyms": ["samdi", "sam"]},
+      {"value": "sunday", "synonyms": ["dimanche", "dim"]}
+    ],
+    "common_examples": [
+      {
+        "text": "je voudrais poser 0,5 jours de cp 01 jun",
+        "intent": "dayoff_create",
+        "entities": [
+          {"start": 31, "end": 33, "value": "conge", "entity": "entity_dayoff"},
+          {
+            "start": 34,
+            "end": 36,
+            "value": "01",
+            "entity": "entity_day_number"
+          },
+          {"start": 37, "end": 40, "value": "june", "entity": "entity_month"}
+        ]
+      },
+      {
+        "text": "je veux poser 2 j de cp 1 février 2017",
+        "intent": "dayoff_create",
+        "entities": [
+          {"start": 21, "end": 23, "value": "conge", "entity": "entity_dayoff"},
+          {"start": 24, "end": 25, "value": "1", "entity": "entity_day_number"},
+          {
+            "start": 26,
+            "end": 33,
+            "value": "february",
+            "entity": "entity_month"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "value": "2017",
+            "entity": "entity_year_number"
+          }
+        ]
+      },
+      {
+        "text": "bonjour",
+        "intent": "greeting",
+        "entities": [
+          {"start": 28, "end": 40, "value": "conge", "entity": "entity_dayoff"},
+          {
+            "start": 41,
+            "end": 43,
+            "value": "20",
+            "entity": "entity_day_number"
+          },
+          {
+            "start": 44,
+            "end": 47,
+            "value": "february",
+            "entity": "entity_month"
+          },
+          {
+            "start": 48,
+            "end": 52,
+            "value": "2018",
+            "entity": "entity_year_number"
+          }
+        ]
+      },
+      {
+        "text": "je souhaite poser 0,5 jour de RTT employeurs 1 fév",
+        "intent": "dayoff_create",
+        "entities": [
+          {
+            "start": 30,
+            "end": 44,
+            "value": "RTT employeurs",
+            "entity": "entity_dayoff"
+          },
+          {"start": 45, "end": 46, "value": "1", "entity": "entity_day_number"},
+          {
+            "start": 47,
+            "end": 50,
+            "value": "february",
+            "entity": "entity_month"
+          }
+        ]
+      },
+      {
+        "text": "je veux poser 0,5 jr de Vacances 1 mai",
+        "intent": "dayoff_create",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "Vacances",
+            "entity": "entity_dayoff"
+          },
+          {"start": 33, "end": 34, "value": "1", "entity": "entity_day_number"},
+          {"start": 35, "end": 38, "value": "may", "entity": "entity_month"}
+        ]
+      },
+      {
+        "text": "je voudrais poser 2 jours de congé paye 01 jan 2017",
+        "intent": "dayoff_create",
+        "entities": [
+          {"start": 29, "end": 39, "value": "conge", "entity": "entity_dayoff"},
+          {
+            "start": 40,
+            "end": 42,
+            "value": "01",
+            "entity": "entity_day_number"
+          },
+          {
+            "start": 43,
+            "end": 46,
+            "value": "january",
+            "entity": "entity_month"
+          },
+          {
+            "start": 47,
+            "end": 51,
+            "value": "2017",
+            "entity": "entity_year_number"
+          }
+        ]
+      }
+    ]
+  }
+}

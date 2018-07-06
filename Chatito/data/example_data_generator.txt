@@ -1,0 +1,246 @@
+%[get_paylib]
+    ~[require] le ~[entity_paylib] @[entity_month] ?
+    ~[require] mon ~[entity_paylib] de @[entity_month] @[entity_next]
+    ~[require] mon ~[entity_paylib] @[entity_month] @[entity_last]
+    ~[require] le ~[entity_paylib] @[entity_month] @[entity_last]
+    je ~[want] le ~[entity_paylib] @[entity_month] @[entity_last] ?
+    je ~[want] le ~[entity_paylib] du mois @[entity_month] ?
+    ~[entity_paylib] @[entity_year_number]/@[entity_month_number]
+    ~[entity_paylib] @[entity_year_number]/@[entity_month]
+    ~[entity_paylib] @[entity_year_number] @[entity_month_number]
+    ~[entity_paylib] @[entity_year_number] @[entity_month]
+    ~[entity_paylib] @[entity_month_number] @[entity_year_number]
+    ~[entity_paylib] @[entity_month] @[entity_year_number]
+    ~[entity_paylib] @[entity_year_number]
+    je ~[want] le ~[entity_paylib] de l'année @[entity_year_number]
+    ~[require] mon ~[entity_paylib] de l'année @[entity_year_number]
+    ~[require] tous les ~[entity_paylib] de l'année @[entity_year_number]
+    ~[require] tous les ~[entity_paylib] du mois @[entity_month], @[entity_month], @[entity_month] de l'année @[entity_year_number]
+    je ~[want] les ~[entity_paylib] du mois @[entity_month], @[entity_month], @[entity_month] de l'année @[entity_year_number]
+
+%[dayoff_create]
+    ~[poser] des @[entity_dayoff]
+    je ~[want] ~[poser] des @[entity_dayoff]
+    je ~[want] ~[poser] des @[entity_dayoff] à partir de @[entity_tomorrow]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir de @[entity_tomorrow]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]/@[entity_year_number] a @[entity_day_number]/@[entity_month_number]/@[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] @[entity_year_number] au @[entity_day_number] @[entity_month_number] @[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]/@[entity_year_number] a @[entity_day_number]/@[entity_month]/@[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] a partir du @[entity_day_number] @[entity_month] @[entity_year_number] au @[entity_day_number] @[entity_month] @[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]/@[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] @[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]/@[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] a partir du @[entity_day_number] @[entity_month] @[entity_year_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number] au @[entity_day_number]/@[entity_month_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] au @[entity_day_number] @[entity_month_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] a partir du @[entity_day_number]/@[entity_month] a @[entity_day_number]/@[entity_month]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] au @[entity_day_number] @[entity_month] 
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] a partir du @[entity_day_number] @[entity_month_number]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir du @[entity_day_number] @[entity_month]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]/@[entity_year_number] a @[entity_day_number]/@[entity_month_number]/@[entity_year_number]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] @[entity_year_number] au @[entity_day_number] @[entity_month_number] @[entity_year_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]/@[entity_year_number] au @[entity_day_number]/@[entity_month]/@[entity_year_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] @[entity_year_number] au @[entity_day_number] @[entity_month] @[entity_year_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]/@[entity_year_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] @[entity_year_number]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]/@[entity_year_number]
+    je ~[want] ~[poser] @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] @[entity_year_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]/@[entity_year_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] @[entity_year_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]/@[entity_year_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] @[entity_year_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number] au @[entity_day_number]/@[entity_month_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] au @[entity_day_number] @[entity_month_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month] au @[entity_day_number]/@[entity_month]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] au @[entity_day_number] @[entity_month]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] les @[entity_dayoff] à partir du @[entity_day_number]/@[entity_month] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] le @[entity_dayoff] à partir du @[entity_day_number] @[entity_month] pour @[entity_number] ~[day]  
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir de ce @[entity_weekday]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] à partir de @[entity_weekday] @[next]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] @[entity_day_number] @[entity_month]
+    je ~[want] ~[poser] @[entity_number] ~[day] de @[entity_dayoff] @[entity_day_number] @[entity_month] @[entity_year_number]
+    je ~[want] ~[poser] @[entity_dayoff] à partir de ce @[entity_weekday] pour @[entity_number] ~[day] 
+    je ~[want] ~[poser] le @[entity_dayoff] à partir de @[entity_weekday] @[next] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] @[entity_dayoff] @[entity_day_number] @[entity_month] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] le @[entity_dayoff] @[entity_day_number] @[entity_month] @[entity_year_number] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] des @[entity_dayoff] à partir de @[entity_tomorrow] pour @[entity_number] ~[day]
+    je ~[want] ~[poser] des @[entity_dayoff] à partir de @[entity_day_number]/@[entity_month_number]/@[entity_year_number] pour @[entity_number] ~[day]
+
+%[dayoff_avail]
+    ~[sum] de ~[day] de @[entity_dayoff] il me reste
+    ~[sum] de ~[day] de @[entity_dayoff] je peux prendre
+    Quel est mon ~[sum] de @[entity_dayoff]
+    Est-ce que je peux prendre des @[entity_dayoff] @[entity_month]
+    ~[sum] dois je ~[poser] de @[entity_dayoff] cette année
+    ~[sum] dois je ~[poser] de @[entity_dayoff] avant de les perdre
+    Vais-je bientôt perdre des ~[day] de @[entity_dayoff]
+    ~[sum] de @[entity_dayoff] me reste-t-il
+
+@[entity_dayoff]
+    RTT
+    ~[conge]
+    vacances
+    enfant malade
+    RTT employeurs
+
+@[entity_weekday]
+    ~[monday]
+    ~[tuesday]
+    ~[wednesday]
+    ~[thursday]
+    ~[friday]
+    ~[saturday]
+    ~[sunday]
+
+@[entity_month]
+    ~[january]
+    ~[february]
+    ~[march]
+    ~[april]
+    ~[may]
+    ~[june]
+    ~[july]
+    ~[august]
+    ~[september]
+    ~[october]
+    ~[november]
+    ~[december]
+
+@[entity_tomorrow]
+    demain
+    lendemain
+
+@[next]
+    prochain
+    prochaine
+    prochaines
+
+@[last]
+    dernier
+    dernière
+
+~[entity_paylib]
+    bulletin de salaire
+    bulletin de paie
+
+~[conge]
+    congés
+    conges
+    congés payés
+    congé paye
+    cp
+
+~[sum]
+    combien
+    solde
+
+~[require]
+    donnes-moi
+    donner moi
+    envoie-moi
+    envoyez-moi
+    où est
+
+~[want]
+    souhaite
+    souhaiter
+    veux
+    voudrais
+    voudrai
+
+~[day]
+    jour
+    jours
+    jr
+    jrs
+    j
+
+~[monday]
+    lundi
+    lun
+
+~[tuesday]
+    mardi
+    mar
+
+~[wednesday]
+    mercredi
+    mer
+
+~[thursday]
+    jeudi
+    jeu
+
+~[friday]
+    vendredi
+    ven
+
+~[saturday]
+    samdi
+    sam
+
+~[sunday]
+    dimanche
+    dim
+
+~[january]
+    janvier
+    jan
+
+~[february]
+    février
+    fevrier
+    fev
+    fév
+
+~[march]
+    mars
+
+~[april]
+    avril
+
+~[may]
+    mai
+
+~[june]
+    juin
+    jun
+
+~[july]
+    juillet
+    jui
+
+~[august]
+    août
+    aoû
+
+~[september]
+    setpembre
+    setp
+
+~[october]
+    octobre
+    oct
+
+~[november]
+    novembre
+    nov
+
+~[december]
+    décembre
+    déc
+
+~[poser]
+    poser
+    prendre
+    prend
+    prends
+    pose

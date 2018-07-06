@@ -1,0 +1,64 @@
+slots:
+  entity_month:
+    type: text
+  entity_month_number:
+    type: text
+  entity_day_number:
+    type: text
+  entity_year_number:
+    type: text
+  entity_dayoff:
+    type: text
+  entity_number:
+    type: text
+
+intents:
+ - greeting
+ - thanks
+ - goodbye
+ - get_paylib
+ - dayoff_create
+ - dayoff_avail
+ - confirm
+ - deny
+
+entities:
+ - entity_next
+ - entity_last
+ - entity_month_number
+ - entity_day_number
+ - entity_year_number
+ - entity_dayoff
+ - entity_weekday
+ - entity_month
+ - entity_tomorrow
+
+templates:
+  utter_greet:
+    - "Salut !"
+  utter_goodbye:
+    - "Au revoir !"
+  utter_default:
+    - "default message"
+  utter_youarewelcome:
+    - "De rien"
+  utter_ask_date:
+    - "Ok, à quelle date ?"
+  utter_ask_day:
+    - "Quel jour ?"
+  utter_ask_month:
+    - "Quel mois ?"
+  utter_ask_cp_type:
+    - "Quel type de congé vous voulez poser ?"
+
+actions:
+  - utter_default
+  - utter_greet
+  - utter_goodbye
+  - utter_youarewelcome
+  - utter_ask_date
+  - utter_ask_day
+  - utter_ask_month
+  - utter_ask_cp_type
+  - actions.ActionCreateDayOff
+  - actions.ActionGetPaylib
